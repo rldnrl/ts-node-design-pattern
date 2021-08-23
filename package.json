@@ -1,0 +1,12 @@
+{
+  "name": "design-pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.7.1",
+    "node": "^16.6.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
