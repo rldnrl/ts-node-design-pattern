@@ -1,8 +1,6 @@
 class Profiler {
-  private lastTime: any;
-  constructor(private label: string) {
-    this.lastTime = null;
-  }
+  private lastTime: any = null;
+  constructor(private label: string) {}
 
   start(): void {
     this.lastTime = process.hrtime();

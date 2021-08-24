@@ -1,29 +1,16 @@
 import { Boat } from "./Boat";
 
 class BoatBuilder {
-  private hasMotors: boolean | null;
-  private motorCount: number | null;
-  private motorBrand: string | null;
-  private motorModel: string | null;
-  private hasSails: boolean | null;
-  private sailsCount: number | null;
-  private sailsMaterial: string | null;
-  private sailsColor: string | null;
-  private hullColor: string | null;
-  private hasCabin: boolean | null;
-
-  constructor() {
-    this.hasMotors = null;
-    this.motorCount = null;
-    this.motorBrand = null;
-    this.motorModel = null;
-    this.hasSails = null;
-    this.sailsCount = null;
-    this.sailsMaterial = null;
-    this.sailsColor = null;
-    this.hullColor = null;
-    this.hasCabin = null;
-  }
+  private hasMotors: boolean | null = null;
+  private motorCount: number | null = null;
+  private motorBrand: string | null = null;
+  private motorModel: string | null = null;
+  private hasSails: boolean | null = null;
+  private sailsCount: number | null = null;
+  private sailsMaterial: string | null = null;
+  private sailsColor: string | null = null;
+  private hullColor: string | null = null;
+  private hasCabin: boolean | null = null;
 
   withMotors(count: number, brand: string, model: string): this {
     this.hasMotors = true;

@@ -1,25 +1,14 @@
 import { Url } from "./Url";
 
 export class UrlBuilder {
-  private protocol: string | null;
-  private username: string | null;
-  private password: string | null;
-  private hostname: string | null;
-  private port: string | null;
-  private pathname: string | null;
-  private search: string | null;
-  private hash: string | null;
-
-  constructor() {
-    this.protocol = null;
-    this.username = null;
-    this.password = null;
-    this.hostname = null;
-    this.port = null;
-    this.pathname = null;
-    this.search = null;
-    this.hash = null;
-  }
+  private protocol: string | null = null;
+  private username: string | null = null;
+  private password: string | null = null;
+  private hostname: string | null = null;
+  private port: string | null = null;
+  private pathname: string | null = null;
+  private search: string | null = null;
+  private hash: string | null = null;
 
   setProtocol(protocol: string): this {
     this.protocol = protocol;
