@@ -16,19 +16,19 @@ Subject라고 하는 다른 객체에 대한 엑세스를 제어하는 객체이
 ## 객체 컴포지션
 컴포지션은 기능을 확장해서 사용하기 위해 객체를 다른 객체와 결합하는 기술이다. 특정 프록시 패턴의 경우 Subject와 동일한 인터페이스를 가진 객체가 생성되고 Subject애 대한 참조 인스턴스 변수나 클로저 변수의 형태로 프록시 내부에 저장된다. Subject는 생성시 사용자가 주입시키거나 프록시 자체에서 생성될 수 있다.
 
-[StackCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/StackCalculator.ts)
+[StackCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/StackCalculator.ts)<br/>
 StackCalculator은 0으로 나누면 Infinity를 출력한다.
 
 <br />
 
-[SafeCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/SafeCalculator.ts)
+[SafeCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/SafeCalculator.ts)<br/>
 SafeCalculator은 프록시 패턴을 이용해서 0으로 나누면 에러를 발생시키도록 출력했다.
 
 컴포지션을 사용하여 프록시 패턴을 구현하려면 기능을 변경하려는 함수 `divide()`를 가로채고, 그렇지 않은 것들은 Subject에 위임한다.
 
 <br />
 
-[createSafeCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/createSafeCalculator.ts)
+[createSafeCalculator](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/createSafeCalculator.ts)<br/>
 createCalculator는 객체 리터럴과 빌더 패턴을 이용해서 구현한 프록시 패턴이다.
 
 <br />
@@ -39,7 +39,7 @@ createCalculator는 객체 리터럴과 빌더 패턴을 이용해서 구현한 
 <br />
 
 ### 내장 프록시
-[internalProxy](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/internalProxy.ts)
+[internalProxy](https://github.com/vueveloper/ts-node-design-pattern/blob/main/src/Structural/1.Proxy/internalProxy.ts)<br/>
 JavaScript 내장 프록시를 이용한 안전한 계산기 만들기.
 
 ```ts
